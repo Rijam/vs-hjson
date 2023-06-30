@@ -1,24 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
-  <Metadata>
-    <Identity Id="6055447a-fc13-4f23-a6f0-d183787fd683" Version="1.0.3" Language="en-US" Publisher="laktak" />
-    <DisplayName>Hjson</DisplayName>
-    <Description xml:space="preserve">Hjson syntax for Visual Studio (see http://hjson.org)</Description>
-    <License>license.txt</License>
-    <Icon>Resources\Package.ico</Icon>
-    <Tags>Hjson, JSON, Human</Tags>
-  </Metadata>
-  <Installation InstalledByMsi="false">
-    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[14.0,]" />
-    <InstallationTarget Version="[14.0,]" Id="Microsoft.VisualStudio.Community" />
-    <InstallationTarget Version="[14.0,]" Id="Microsoft.VisualStudio.Enterprise" />
-  </Installation>
-  <Dependencies>
-    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="4.5" />
-    <Dependency Id="Microsoft.VisualStudio.MPF.14.0" DisplayName="Visual Studio MPF 14.0" d:Source="Installed" Version="[14.0,15.0)" />
-  </Dependencies>
-  <Assets>
-    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
-    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
-  </Assets>
+    <Metadata>
+        <Identity Id="Hjson.24be8f70-cb5f-48cf-9a9a-7c52f295f44b" Version="1.1" Language="en-US" Publisher="laktak; Tyfyter" />
+        <DisplayName>Hjson</DisplayName>
+        <Description xml:space="preserve">Hjson VSIX Extension for Visual Studio 2022. Original Hjson extension created by Christian Zangl (laktak). Modern port by Tyfyter. Modified and re-released by Rijam.</Description>
+        <Icon>Package.ico</Icon>
+        <PreviewImage>Package.ico</PreviewImage>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0, 17.0)" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+    </Installation>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+    <!--Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="Grammars.pkgdef" />
+  </Assets-->
 </PackageManifest>

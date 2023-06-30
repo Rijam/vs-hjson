@@ -1,0 +1,13 @@
+﻿; Registering the package
+[$RootKey$\InstalledProducts\HjsonPackage]
+"Package"="{0fad4317-dbb6-4008-8392-7c83541c1038}"
+[$RootKey$\BindingPaths\{0fad4317-dbb6-4008-8392-7c83541c1038}]
+"$PackageFolder$"=""
+
+; Registering the TextMate grammar
+[$RootKey$\TextMate\Repositories]
+"Hjson"="$PackageFolder$\Syntaxes"
+
+; Match file extensions with icons. See full icon list at https://glyphlist.azurewebsites.net/knownmonikers/
+[$RootKey$\ShellFileAssociations\.pkgdef]
+"DefaultIconMoniker"="KnownMonikers.ConfigurationEditor"
